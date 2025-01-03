@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <!-- List View for Session -->
+    <record id="view_session_list" model="ir.ui.view">
+        <field name="name">session.model.tree</field>
+        <field name="model">session.model</field>
+        <field name="arch" type="xml">
+            <tree string="Session">
+                <field name="name"/>
+                <field name="start_date"/>
+                <field name="duration"/>
+                <field name="seats"/>
+                <field name="instructor_id"/>
+                <field name="course_id"/>
+                <field name="attendee_ids"/>
+                <field name="taken_seats_percentage" widget="progressbar"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form View for Sessions -->
+    <record id="view_session_form" model="ir.ui.view">
+        <field name="name">session.model.form</field>
+        <field name="model">session.model</field>
+        <field name="arch" type="xml">
+            <form string="Session">
+                <sheet>
+                    <h1>
+                        <field name="name"/>
+                    </h1>
+                    <group>
+                        <field name="start_date"/>
+                        <field name="duration"/>
+                        <field name="seats"/>
+                        <field name="instructor_id"/>
+                        <field name="course_id"/>
+                        <field name="attendee_ids"/>
+                        <field name="taken_seats_percentage" widget="progressbar"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

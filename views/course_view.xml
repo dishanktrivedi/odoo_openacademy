@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- List View for Courses -->
+    <record id="view_course_list" model="ir.ui.view">
+        <field name="name">course.model.tree</field>
+        <field name="model">course.model</field>
+        <field name="arch" type="xml">
+            <tree string="Courses">
+                <field name="title"/>
+                <field name="description"/>
+                <field name="responsible_user"/>
+                <field name="session_ids"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- Form View for Courses -->
+    <record id="view_course_form" model="ir.ui.view">
+    <field name="name">course.model.form</field>
+    <field name="model">course.model</field>
+    <field name="priority" eval="16"/>
+    <field name="arch" type="xml">
+
+        <form string="Courses Form">
+            <group colspan="4">
+                <group colspan="2" col="2">
+                    <separator string="Title" colspan="2"/>
+                    <field name="title"/>
+                    <field name="responsible_user"/>
+                    <field name="session_ids"/>
+                </group>
+
+                <notebook colspan="4">
+                    <page string="Description">
+                        <field name="description" nolabel="1"/>
+                    </page>
+                </notebook>
+
+            </group>
+            </form>
+
+        </field>
+    </record>
+
+
+    <!-- Search View for Courses -->
+    <record id="view_course_search" model="ir.ui.view">
+        <field name="name">course.model.search</field>
+        <field name="model">course.model</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="title"/>
+                <field name="description"/>
+            </search>
+        </field>
+    </record>
+
+
+
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+
+    <data>
+        <record model="course.model" id="course_model_demo_1">
+            <field name="title">Complete Data Science Bootcamp</field>
+            <field name="description">Master the theory, practice,and math behind Data Science,Machine Learning,Deep Learning,NLP with end to end projects</field>
+        </record>
+
+        <record model="course.model" id="course_model_demo_2">
+            <field name="title">Machine Learning</field>
+            <field name="description">Learn to create Machine Learning Algorithms in Python and R from two Data Science experts. Code templates included.</field>
+        </record>
+
+        <record model="course.model" id="course_model_demo_3">
+            <field name="title">Clustering And Classification</field>
+            <field name="description">Harness The Power Of Machine Learning For Unsupervised and Supervised Learning In Python</field>
+        </record>
+
+        <record model="course.model" id="course_model_demo_4">
+            <field name="title">AWS Certified Machine Learning</field>
+            <field name="description">Practice exam included! Master MLA-C01 / ME1-C01 AWS Machine Learning Engineer Exam: SageMaker, Bedrock, and AI Skills.</field>
+        </record>
+
+    </data>
+
+
+
+<!--    <data noupdate="1">-->
+<!--           <record id="category_teacher_level_1" model="res.partner.category">-->
+<!--           <field name="name">Teacher / Level 1</field>-->
+<!--       </record>-->
+
+<!--       <record id="category_teacher_level_2" model="res.partner.category">-->
+<!--           <field name="name">Teacher / Level 2</field>-->
+<!--       </record>-->
+<!--   </data>-->
+
+
+</odoo>
