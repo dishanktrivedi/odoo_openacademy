@@ -1,0 +1,13 @@
+<odoo>
+    <!-- Record Rule for Course -->
+    <record id="course_manager_write_unlink" model="ir.rule">
+        <field name="name">Manager: Write/Unlink Course Access</field>
+        <field name="model_id" ref="openacademy.model_course_model"/>
+        <field name="groups" eval="[(4, ref('openacademy.group_openacademy_manager'))]"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="1"/>
+        <field name="perm_create" eval="1"/>
+        <field name="perm_unlink" eval="1"/>
+        <field name="domain_force">['|', ('responsible_user', '=', user.id), ('responsible_user', '=', False)]</field>
+    </record>
+</odoo>

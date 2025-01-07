@@ -10,6 +10,8 @@
     # List of XML files for views
     'data': [
         'demo/course_demo.xml',
+        'security/groups.xml',
+        'security/course_record_rules.xml',
         'security/ir.model.access.csv',
         'views/course_view.xml',
         'views/session_view.xml',

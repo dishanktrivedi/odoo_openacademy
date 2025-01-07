@@ -51,8 +51,20 @@
         <field name="model">course.model</field>
         <field name="arch" type="xml">
             <search>
+
                 <field name="title"/>
                 <field name="description"/>
+                <field name="responsible_user"/>
+
+                <!-- Filter Button to Show Courses by Current User -->
+                <filter name="my_courses" string="My Courses"
+                        domain=" [('responsible_user', '=', uid)]"/>
+
+                <!-- Group By Button -->
+                <filter name="group_by_responsible_users" string="Responsible Users"
+                        context="{'group_by': 'responsible_user'}"/>
+
+
             </search>
         </field>
     </record>
