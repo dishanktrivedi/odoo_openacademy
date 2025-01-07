@@ -16,5 +16,13 @@
         <field name="view_mode">list,form,calendar,gantt,graph,kanban</field>
     </record>
 
+    <!-- Define an action to open the wizard -->
+    <record id="action_session_attendee_wizard" model="ir.actions.act_window">
+        <field name="name">Register Attendees</field>
+        <field name="res_model">session.attendee.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'default_session_ids': active_ids}</field>
+    </record>
 
 </odoo>

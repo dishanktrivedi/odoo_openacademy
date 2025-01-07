@@ -20,13 +20,4 @@
               action="action_list_session"
               sequence="30"/>
 
-    <!-- Menu item to trigger the wizard -->
-    <menuitem id="menu_session_attendee_wizard"
-              name="Create Attendees for Session"
-              parent="course_menu_root"
-              action="action_session_attendee_wizard"
-              sequence="40"/>
-
-
-
 </odoo>

@@ -18,6 +18,7 @@
                 <field name="attendee_ids"/>
                 <field name="taken_seats_percentage" widget="progressbar"/>
                 <field name="active"/>
+                <button name="%(action_session_attendee_wizard)d" type="action" string="Register Attendees" class="oe_highlight"/>
             </tree>
         </field>
     </record>
@@ -42,6 +43,7 @@
                         <field name="attendee_ids"/>
                         <field name="taken_seats_percentage" widget="progressbar"/>
                         <field name="active"/>
+                        <button name="%(action_session_attendee_wizard)d" type="action" string="Register Attendees" class="oe_highlight"/>
                     </group>
                 </sheet>
             </form>
