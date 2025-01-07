@@ -16,4 +16,5 @@
         <field name="view_mode">list,form,calendar,gantt,graph,kanban</field>
     </record>
 
+
 </odoo>

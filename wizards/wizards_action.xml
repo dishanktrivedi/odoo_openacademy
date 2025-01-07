@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <!-- Define an action to open the wizard -->
+    <record id="action_session_attendee_wizard" model="ir.actions.act_window">
+        <field name="name">Session Attendee Wizard</field>
+        <field name="res_model">session.attendee.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+
+</odoo>

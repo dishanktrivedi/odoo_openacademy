@@ -17,7 +17,9 @@
         'views/session_view.xml',
         'views/partner_inherit_views.xml',
         'views/course_action.xml',
-        'views/course_menu.xml'],
+        'wizards/wizards_action.xml',
+        'views/course_menu.xml',
+        'wizards/session_attendee_wizard_view.xml',],
 
 
     # Allows the module to be installed
