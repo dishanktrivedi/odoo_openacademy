@@ -18,6 +18,7 @@
         'views/partner_inherit_views.xml',
         'views/course_action.xml',
         'views/course_menu.xml',
+        'views/session_report.xml',
         'wizards/session_attendee_wizard_view.xml'],
 
 

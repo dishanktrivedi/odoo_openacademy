@@ -150,3 +150,10 @@ Exercise:
 Register attendees to multiple sessions
 Modify the wizard model so that attendees can be registered to multiple sessions.
 
+Exercise:
+Create a report for the Session model
+For each session, it should display session’s name, its start and end, and list the session’s attendees.
+
+Exercise:
+Define a Dashboard
+Define a dashboard containing the graph view you created, the sessions calendar view and a list view of the courses (switchable to a form view). This dashboard should be available through a menuitem in the menu, and automatically displayed in the web client when the OpenAcademy main menu is selected.

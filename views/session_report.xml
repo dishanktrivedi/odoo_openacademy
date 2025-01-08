@@ -1,0 +1,49 @@
+<odoo>
+    <record id="action_session_report" model="ir.actions.report">
+        <field name="name">Session Report</field>
+        <field name="model">session.model</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">openacademy.report_session</field>
+        <field name="report_file">openacademy.report_session</field>
+        <field name="binding_model_id" ref="model_session_model"/>
+        <field name="binding_type">report</field>
+    </record>
+
+
+    <template id="report_session">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="session">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <h2>Session Report</h2>
+                        <table class="table table-condensed">
+                            <tr>
+                                <th>Session Name</th>
+                                <td><t t-esc="session.name"/></td>
+                            </tr>
+                            <tr>
+                                <th>Start Date</th>
+                                <td><t t-esc="session.start_date"/></td>
+                            </tr>
+                            <tr>
+                                <th>End Date</th>
+                                <td><t t-esc="session.end_date"/></td>
+                            </tr>
+                            <tr>
+                                <th>Attendees</th>
+                                <td>
+                                    <ul>
+                                        <t t-foreach="session.attendee_ids" t-as="attendee">
+                                            <li><t t-esc="attendee.name"/></li>
+                                        </t>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+
+</odoo>
