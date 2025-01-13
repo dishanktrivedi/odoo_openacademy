@@ -252,3 +252,6 @@ Modify the wizard model so that attendees can be registered to multiple sessions
 Create a report for the Session model
 <br></br>
 For each session, it should display session’s name, its start and end, and list the session’s attendees.
+
+**Exercise:**
+Add an action in the context menu to archive course. (action that appears when selecting record or records)
