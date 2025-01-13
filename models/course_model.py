@@ -14,6 +14,8 @@ class Course(models.Model):
 
     session_ids = fields.One2many('session.model', 'course_id', string="Sessions")
 
+    archived = fields.Boolean(string="Archived", default=False)
+
     _sql_constraints = [
         # Ensure that the course title and description are different
         ('check_title_description_diff',
@@ -36,3 +38,9 @@ class Course(models.Model):
 
         # Call the copy method on the parent model
         return super(Course, self).copy(default=default)
+
+
+    def action_archive_courses(self):
+
+        for record in self:
+            record.archived = True

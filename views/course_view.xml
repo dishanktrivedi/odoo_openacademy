@@ -11,6 +11,7 @@
                 <field name="description"/>
                 <field name="responsible_user"/>
                 <field name="session_ids"/>
+                <field name="archived"/>
             </tree>
         </field>
     </record>
@@ -30,6 +31,7 @@
                     <field name="title"/>
                     <field name="responsible_user"/>
                     <field name="session_ids"/>
+                    <field name="archived"/>
                 </group>
 
                 <notebook colspan="4">
@@ -55,20 +57,18 @@
                 <field name="title"/>
                 <field name="description"/>
                 <field name="responsible_user"/>
+                <field name="archived"/>
 
                 <!-- Filter Button to Show Courses by Current User -->
                 <filter name="my_courses" string="My Courses"
-                        domain=" [('responsible_user', '=', uid)]"/>
+                        domain="[('responsible_user', '=', uid)]"/>
 
                 <!-- Group By Button -->
                 <filter name="group_by_responsible_users" string="Responsible Users"
                         context="{'group_by': 'responsible_user'}"/>
 
-
             </search>
         </field>
     </record>
-
-
 
 </odoo>

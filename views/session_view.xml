@@ -51,19 +51,23 @@
     </record>
 
 
-    <!-- Calendar View for Sessions -->
-    <record id="view_session_calendar" model="ir.ui.view">
-        <field name="name">session.model.calendar</field>
-        <field name="model">session.model</field>
-        <field name="arch" type="xml">
-            <calendar string="Sessions" date_start="start_date" color="course_id">
-                <field name="name"/>
-                <field name="course_id"/>
-                <field name="instructor_id"/>
-                <field name="attendee_ids"/>
-            </calendar>
-        </field>
-    </record>
+<!--    &lt;!&ndash; Calendar View for Sessions &ndash;&gt;-->
+<!--    <record id="view_session_calendar" model="ir.ui.view">-->
+<!--        <field name="name">session.model.calendar</field>-->
+<!--        <field name="model">session.model</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <calendar string="Sessions" date_start="start_date" color="course_id">-->
+<!--                <field name="name"/>-->
+<!--                <field name="course_id"/>-->
+<!--                <field name="instructor_id"/>-->
+<!--                <field name="attendee_ids"/>-->
+<!--            </calendar>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+
 
 
     <!-- Gantt View for Sessions -->
