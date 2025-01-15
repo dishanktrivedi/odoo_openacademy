@@ -1,5 +1,3 @@
-from pkg_resources import require
-
 from odoo import models, fields
 
 class Course(models.Model):
@@ -29,6 +27,10 @@ class Course(models.Model):
     ]
 
     def copy(self, default=None):
+
+        # Print the context dictionary
+        current_context = self.env.context
+        print(current_context)
 
         # Call the super method to ensure the course is duplicated
         default = dict(default or {})
