@@ -1,4 +1,6 @@
 from odoo import models, fields
+from odoo.addons.test_convert.tests.test_env import record
+
 
 class Course(models.Model):
     _name = 'course.model'
@@ -44,5 +46,10 @@ class Course(models.Model):
 
     def action_archive_courses(self):
 
+        # Print the context dictionary
+        current_context = self.env.context
+        print(current_context)
+
         for record in self:
             record.archived = True
+

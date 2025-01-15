@@ -14,6 +14,7 @@
         'security/course_record_rules.xml',
         'security/ir.model.access.csv',
         'views/course_view.xml',
+        'wizards/course_unarchived_wizard.xml',
         'views/course_action.xml',
         'views/session_view.xml',
         'views/partner_inherit_views.xml',

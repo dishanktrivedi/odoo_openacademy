@@ -84,7 +84,7 @@
         </record>
 
 
-    <!-- Gantt View for Sessions -->
+    <!-- Graph View for Sessions -->
     <record id="view_session_graph" model="ir.ui.view">
         <field name="name">session.model.graph</field>
         <field name="model">session.model</field>
