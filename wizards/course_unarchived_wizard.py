@@ -12,7 +12,6 @@ class CourseUnarchivedWizard(models.TransientModel):
         current_context = self.env.context
         print(current_context)
 
-        for wizard in self:
-            for course in wizard.unarchived_courses_id:
-                course.archived = False
+        for wizard in self.unarchived_courses_id:
+            wizard.archived = False
 
