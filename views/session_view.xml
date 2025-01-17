@@ -7,7 +7,7 @@
         <field name="name">session.model.tree</field>
         <field name="model">session.model</field>
         <field name="arch" type="xml">
-            <tree string="Session" decoration-info="duration &lt; 5" decoration-danger="duration &gt; 15">
+            <tree string="Session" decoration-info="duration &lt; 5" decoration-it="duration &lt; 6" decoration-danger="duration &gt; 15" decoration-warning="duration &gt;= 6 and duration &lt; 15">
                 <field name="name"/>
                 <field name="start_date"/>
                 <field name="end_date"/>
@@ -140,5 +140,4 @@
             </kanban>
         </field>
     </record>
-
 </odoo>
