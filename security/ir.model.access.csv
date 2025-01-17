@@ -3,5 +3,6 @@ course_model_access,course_model_access,model_course_model,,1,0,0,0
 session_model_access,session_model_access,model_session_model,,1,0,0,0
 session_attendee_wizard_access,session_attendee_wizard_access,model_session_attendee_wizard,,1,1,1,0
 course_unarchived_wizard_access,course_unarchived_wizard_access,model_course_unarchived_wizard,,1,1,1,0
+purchase_order_button_wizard_access,purchase_order_button_wizard_access,model_purchase_order_button_wizard,,1,1,1,0
 manager_course_access,manager.course.access,model_course_model,group_openacademy_manager,1,1,1,1
 manager_session_access,manager.session.access,model_session_model,group_openacademy_manager,1,1,1,1

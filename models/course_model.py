@@ -1,5 +1,4 @@
 from odoo import models, fields
-from odoo.addons.test_convert.tests.test_env import record
 
 
 class Course(models.Model):
